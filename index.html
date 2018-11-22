@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="img/pageicon.ico" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/script.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -11,23 +12,25 @@
 <div class="mainDiv">
    <table>
        <tr>
-	      <td><img src="img/empty.png" name="image" onclick="imgClick(0)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(1)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(2)"></td>
+	      <td><img src="img/empty.png" id="image0" onclick="imgClick('image0')"></td>
+		  <td><img src="img/empty.png" id="image1" onclick="imgClick('image1')"></td>
+		  <td><img src="img/empty.png" id="image2" onclick="imgClick('image2')"></td>
 	   </tr>
 	   <tr>
-	      <td><img src="img/empty.png" name="image" onclick="imgClick(3)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(4)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(5)"></td>
+	      <td><img src="img/empty.png" id="image3" onclick="imgClick('image3')"></td>
+		  <td><img src="img/empty.png" id="image4" onclick="imgClick('image4')"></td>
+		  <td><img src="img/empty.png" id="image5" onclick="imgClick('image5')"></td>
 	   </tr>
 	   <tr>
-	      <td><img src="img/empty.png" name="image" onclick="imgClick(6)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(7)"></td>
-		  <td><img src="img/empty.png" name="image" onclick="imgClick(8)"></td>
+	      <td><img src="img/empty.png" id="image6" onclick="imgClick('image6')"></td>
+		  <td><img src="img/empty.png" id="image7" onclick="imgClick('image7')"></td>
+		  <td><img src="img/empty.png" id="image8" onclick="imgClick('image8')"></td>
 	   </tr>
    </table>
 </div>
-
+<center><button onclick="reset()">Reset</button></center>
+	<div id="win"></div>
+<p id="player">1</p>
 </body>
 
 </html> 

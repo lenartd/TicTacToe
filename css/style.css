@@ -10,3 +10,7 @@ table
 {
 	margin:auto;
 }
+#player
+{
+	visibility: hidden;
+}
